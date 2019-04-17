@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### **Prerequisites**
 
-To install the .js file you must have a text-editor, I use sublime, but feel free to use whichever you would like. Dowload sublime at :
+To install the .js file you must have a text-editor, I use sublime, but feel free to use whichever you would like. Download sublime at :
 
 >https://www.sublimetext.com
 

@@ -1,6 +1,6 @@
 # **Rock Paper Scissors**
 
-Implementation of Rock, Paper, Scissors using JavaScript and HTML, this is a work in progress.
+Implementation of Rock, Paper, Scissors using JavaScript and HTML.
 
 ## **Getting Started**
 

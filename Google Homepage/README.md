@@ -14,7 +14,7 @@ You should have a text-editor, I use sublime, but feel free to use whichever you
 
 ### **Installing**
 
-Download all files onto your computer's desktop. 
+Download all files onto your computer's desktop or in the **SAME** folder. 
 
 Open index.html on your computer.
 

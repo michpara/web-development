@@ -5,7 +5,6 @@
 </head>
 <body>
   <script>
-
     console.log("Hello, World!")
   </script>
 </body>

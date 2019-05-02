@@ -13,24 +13,20 @@
 	margin-right:auto;
 }
 
+.gmail{
+	right:225px;
+}
+
+.images{
+	right:165px;
+}
+
 .about{
-	position:absolute;
 	left:25px;
 }
 
 .store{
-	position:absolute;
 	left:75px;	
-}
-
-.images{
-	position:absolute;
-	right:165px;
-}
-
-.gmail{
-	position:absolute;
-	right:225px;
 }
 
 .avatar{
@@ -80,10 +76,6 @@
 	box-shadow:0px 1px 9px -5px;
 }
 
-.input{
-	cursor:text;
-}
-
 .box:hover{
 	box-shadow:0px 4px 10px -5px;
 	border:1px solid lightgrey;
@@ -91,6 +83,10 @@
 
 }
 
+.buttons {
+  margin-bottom:60px;
+  margin-left:220px;
+}
 
 a{
 	color:#1a0dab;
@@ -104,37 +100,19 @@ a:hover{
 }
 
 
-
-.mic{
-	height:24px;
-	width:24px;
-}
-
-
-
 button {
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    color: #5F6368;
-    cursor: pointer;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    min-width: 54px;
-    padding: 0 16px;
-    height: 36px;
-    line-height: 27px;
+  background-color:#f2f2f2;
+  border:none;
+  padding:10px;
+  margin:10px;
+  color:#757575;
+  font-size:10pt;
+  font-weight:bold;
+  font-family:arial;
+  border-radius: 2px;
+  margin-top:175px;
+  position:relative;
+  display:inline-block;
 
-
-  
-}
-
-.button{
-	max-height: 92px;
-	max-width: 272px;
-	position: relative;
-	top: 91px;
-	padding-top:109px;
 }
 

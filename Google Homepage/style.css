@@ -139,3 +139,38 @@ button:hover{
 	outline:none;
     
 }
+
+#Canada{
+    color:rgba(0,0,0,.54);
+    font-size:15px;
+    font-family:arial;
+    cursor:text
+    display:inline;
+    margin-left:25px;
+    margin-top:140px;
+}
+
+#Advertising{
+    color: #5f6368;
+    display: inline-block;
+    cursor: pointer;
+    font-size:13px;
+    font-family:arial;
+
+}
+
+#Business{
+    color: #5f6368;
+    display: inline-block;
+    cursor: pointer;
+    font-size:13px;
+    font-family:arial;
+}
+
+#Advertising:hover{
+    text-decoration:underline;
+}
+
+#Business:hover{
+    text-decoration: :hover;
+}

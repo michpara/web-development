@@ -156,6 +156,7 @@ button:hover{
     cursor: pointer;
     font-size:13px;
     font-family:arial;
+    margin-left:25px;
 
 }
 
@@ -165,6 +166,40 @@ button:hover{
     cursor: pointer;
     font-size:13px;
     font-family:arial;
+    margin-left:28px;
+}
+
+#Privacy{
+    color: #5f6368;
+    display: inline-block;
+    cursor: pointer;
+    font-size:13px;
+    font-family:arial;
+    margin-right:50%;
+
+   
+}
+
+#Terms{
+    color: #5f6368;
+    display: inline-block;
+    cursor: pointer;
+    font-size:13px;
+    font-family:arial;
+    margin-right:25px
+  
+    
+}
+
+#Settings{
+    color: #5f6368;
+    display: inline-block;
+    cursor: pointer;
+    font-size:13px;
+    font-family:arial;
+    margin-right:23px
+
+   
 }
 
 #Advertising:hover{
@@ -172,5 +207,17 @@ button:hover{
 }
 
 #Business:hover{
-    text-decoration: :hover;
+    text-decoration: :underline;
+}
+
+#Privacy:hover{
+    text-decoration: :underline;
+}
+
+#Terms:hover{
+    text-decoration: :underline;
+}
+
+#Settings:hover{
+    text-decoration: :underline;
 }

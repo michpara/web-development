@@ -28,13 +28,28 @@ SELECT name, CONCAT(ROUND(population/(SELECT population FROM world WHERE name = 
  WHERE continent = 'Europe';
 
 #Question 6
-
-
-
-
-
+SELECT name 
+  FROM world 
+ WHERE gdp >= ALL (SELECT gdp FROM world WHERE gdp >= 0 AND continent = 'Europe') 
+   AND continent != 'Europe';
 
 #Question 7
 SELECT continent, name, area 
   FROM world x
  WHERE area >= ALL (SELECT area FROM world y WHERE y.continent=x.continent AND population>0);
+
+ #Question 8
+ SELECT continent, name 
+   FROM world x 
+  WHERE name = (SELECT name FROM world y WHERE x.continent = y.continent LIMIT 1) 
+  ORDER BY continent;
+
+ #Question 9
+ SELECT name, continent, population 
+   FROM world x 
+  WHERE 25000000 >= ALL(SELECT population FROM world y WHERE x.continent = y.continent);
+
+ #Question 10
+ SELECT name, continent 
+   FROM world x 
+  WHERE population > ALL (SELECT population*3 FROM world y WHERE x.continent = y.continent AND population > 0 AND y.name != x.name);

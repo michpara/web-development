@@ -17,7 +17,7 @@ FROM world
 WHERE area 
 BETWEEN 200000 AND 250000;
 
-#SELECT Quiz
+#Quiz
 1. C
 2. E
 3. E

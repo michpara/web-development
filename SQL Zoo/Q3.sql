@@ -1,82 +1,90 @@
-#SELECT world
+#SELECT nobel
 
 #Question 1
-SELECT name, continent, population 
-  FROM world;
+SELECT *
+  FROM nobel
+ WHERE yr = 1950;
 
 #Question 2
-SELECT name 
-  FROM world
- WHERE population >= 200000000;
+ SELECT winner
+  FROM nobel
+ WHERE yr = 1962
+   AND subject = 'Literature';
 
 #Question 3
-SELECT name, gdp/population AS 'per capita GDP' 
-  FROM world 
- WHERE population >= 200000000;
+SELECT yr, subject 
+  FROM nobel 
+ WHERE winner = 'Albert Einstein';
 
 #Question 4
-SELECT name, population/1000000 AS 'population (millions)' 
-  FROM world 
- WHERE continent = 'South America';
+SELECT winner 
+  FROM nobel 
+ WHERE subject = 'Peace' 
+   AND yr >= 2000;
 
 #Question 5
-SELECT name, population
-  FROM world 
- WHERE name IN ('France', 'Germany', 'Italy');
+ SELECT * 
+   FROM nobel 
+  WHERE subject = 'Literature'
+    AND yr 
+BETWEEN 1980 AND 1989;
 
 #Question 6
-SELECT name 
-  FROM world 
- WHERE name LIKE '%United%';
+SELECT * 
+  FROM nobel 
+ WHERE winner IN ('Theodore Roosevelt', 'Woodrow Wilson', 'Jimmy Carter', 'Barack Obama');
 
 #Question 7
-SELECT name, population, area 
-  FROM world 
- WHERE area > 3000000
-    OR population > 250000000;
+SELECT winner 
+  FROM nobel 
+ WHERE winner LIKE 'John_%';
 
 #Question 8
-SELECT name, population, area 
-  FROM world 
- WHERE area > 3000000 
-   XOR population > 250000000;
+SELECT *
+  FROM nobel 
+ WHERE (subject = 'Physics' AND yr = 1980) 
+    OR (subject = 'Chemistry' AND yr = 1984);
 
 #Question 9
-SELECT name, ROUND(population/1000000,2) AS 'population (millions)', ROUND(gdp/1000000000,2) AS 'GDP (billions)' 
-  FROM world 
- WHERE continent = 'South America';
+SELECT * 
+  FROM nobel 
+ WHERE yr = 1980 
+   AND subject != 'Chemistry' 
+   AND subject != 'Medicine';
 
 #Question 10
-SELECT name, ROUND(gdp/population,-3) AS 'per-capita GDP' 
-  FROM world 
- WHERE gdp >= 1000000000000;
+SELECT * 
+  FROM nobel
+ WHERE (subject = 'Medicine' AND yr < 1910) 
+    OR (subject = 'Literature' AND yr >= 2004);
 
 #Question 11
-SELECT name, capital 
-  FROM world 
- WHERE LENGTH(capital) = LENGTH(name);
+SELECT * 
+  FROM nobel 
+ WHERE winner = 'Peter Grünberg';
 
 #Question 12
-SELECT name, capital 
-  FROM world 
- WHERE LEFT(name, 1) = LEFT(capital, 1) 
-   AND capital != name;
+SELECT * 
+  FROM nobel 
+ WHERE winner = 'Eugene O''Neill';
 
 #Question 13
-SELECT name 
-  FROM world 
- WHERE name LIKE '%a%' 
-   AND name LIKE '%e%' 
-   AND name LIKE '%i%' 
-   AND name LIKE '%o%' 
-   AND name LIKE '%u%' 
-   AND name NOT LIKE '% %';
+SELECT winner, yr, subject 
+  FROM nobel 
+ WHERE winner LIKE 'Sir%' 
+ ORDER BY yr DESC, winner ASC;
+
+#Question 14
+SELECT winner, subject
+  FROM nobel
+ WHERE yr=1984
+ ORDER BY subject IN ('Physics','Chemistry'), subject,winner;
 
 #Quiz
 1. E
-2. D
+2. C
 3. B
-4. D
-5. B
-6. D
-7. C
+4. C
+5. C
+6. C
+7. D

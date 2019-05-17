@@ -27,8 +27,7 @@ SELECT teacher.name, dept.name
 #Question 5
 SELECT name, COALESCE(mobile, '07986 444 2266') 
   FROM teacher;
-
-
+  
 #Question 6
 SELECT teacher.name, COALESCE(dept.name, 'None') 
   FROM teacher 

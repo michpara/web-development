@@ -11,7 +11,7 @@ SELECT SUM(A_STRONGLY_AGREE)
 SELECT institution, subject
   FROM nss
  WHERE question='Q15' 
- AND score >= 100;
+   AND score >= 100;
 
 #Question 3
 SELECT institution,score
@@ -21,39 +21,39 @@ SELECT institution,score
    AND score < 50;
 
 #Question 4
-SELECT subject, SUM(response)
-  FROM nss
- WHERE question='Q22'
-   AND subject IN ('(8) Computer Science', '(H) Creative Arts and Design') 
- GROUP BY subject;
+  SELECT subject, SUM(response)
+    FROM nss
+   WHERE question='Q22'
+     AND subject IN ('(8) Computer Science', '(H) Creative Arts and Design') 
+GROUP BY subject;
 
 #Question 5
-SELECT subject, SUM(((A_STRONGLY_AGREE)*response)/100) 
- FROM nss 
-WHERE question ='Q22' 
-  AND subject 
-   IN ('(8) Computer Science', '(H) Creative Arts and Design') 
+  SELECT subject, SUM(((A_STRONGLY_AGREE)*response)/100) 
+   FROM nss 
+  WHERE question ='Q22' 
+    AND subject 
+     IN ('(8) Computer Science', '(H) Creative Arts and Design') 
 GROUP BY subject;
 
 #Quesiton 6
-SELECT subject, ROUND(SUM(A_STRONGLY_AGREE)/COUNT(response)) 
- FROM nss 
-WHERE question = 'Q22' 
-  AND subject = '(8) Computer science' 
-   OR subject = '(H) Creative Arts and Design' 
+  SELECT subject, ROUND(SUM(A_STRONGLY_AGREE)/COUNT(response)) 
+    FROM nss 
+   WHERE question = 'Q22' 
+     AND subject = '(8) Computer science' 
+      OR subject = '(H) Creative Arts and Design' 
 GROUP BY subject;
 
 #Question 7
-SELECT institution, ROUND(SUM(score*response)/SUM(response)) 
-  FROM nss 
- WHERE institution 
-  LIKE '%Manchester%' 
-   AND question = 'Q22' 
- GROUP BY institution;
+  SELECT institution, ROUND(SUM(score*response)/SUM(response)) 
+    FROM nss 
+   WHERE institution 
+    LIKE '%Manchester%' 
+     AND question = 'Q22' 
+GROUP BY institution;
 
 #Question 8
-SELECT institution, SUM(sample), SUM(CASE WHEN subject LIKE '%(8)%' THEN sample END)
-  FROM nss
- WHERE question='Q01'
-   AND (institution LIKE '%Manchester%')
- GROUP BY institution;
+  SELECT institution, SUM(sample), SUM(CASE WHEN subject LIKE '%(8)%' THEN sample END)
+    FROM nss
+   WHERE question='Q01'
+     AND (institution LIKE '%Manchester%')
+GROUP BY institution;

@@ -2,6 +2,8 @@
 
 The google.ca homepage using HTML and CSS.
 
+To view the website, visit : https://michpara.github.io/Google-Homepage/
+
 ## **Getting Started**
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

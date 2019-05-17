@@ -19,7 +19,7 @@ SELECT COUNT(name)
  WHERE area >= 1000000;
 
 #Question 5
-SELECT sum(population) 
+SELECT SUM(population) 
   FROM world 
  WHERE name IN ('Estonia', 'Latvia', 'Lithuania');
 

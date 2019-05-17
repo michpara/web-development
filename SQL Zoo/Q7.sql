@@ -11,11 +11,11 @@ SELECT yr
  WHERE title = 'Citizen Kane';
 
 #Question 3
-SELECT id, title, yr 
-  FROM movie 
- WHERE title 
-  LIKE '%Star Trek%' 
- ORDER BY yr;
+  SELECT id, title, yr 
+    FROM movie 
+   WHERE title 
+    LIKE '%Star Trek%' 
+ORDER BY yr;
 
 #Question 4
 SELECT id 
@@ -75,25 +75,25 @@ SELECT title, name
    AND yr = 1962;
 
 #Question 11
-SELECT yr,COUNT(title) 
-  FROM movie 
-  JOIN casting 
-    ON movie.id=movieid
-  JOIN actor   
-    ON actorid=actor.id
- WHERE name='John Travolta'
- GROUP BY yr
-HAVING COUNT(title)=(SELECT MAX(c)  
-  FROM (SELECT yr,COUNT(title) 
-    AS c 
-  FROM movie 
-  JOIN casting 
-    ON movie.id=movieid
-  JOIN actor   
-    ON actorid=actor.id
- WHERE name='John Travolta'
- GROUP BY yr) 
-    AS t
+  SELECT yr, COUNT(title) 
+    FROM movie 
+    JOIN casting 
+      ON movie.id = movieid
+    JOIN actor   
+      ON actorid = actor.id
+   WHERE name = 'John Travolta'
+GROUP BY yr
+  HAVING COUNT(title)=(SELECT MAX(c)  
+    FROM (SELECT yr,COUNT(title) 
+      AS c 
+    FROM movie 
+    JOIN casting 
+      ON movie.id=movieid
+    JOIN actor   
+      ON actorid=actor.id
+   WHERE name='John Travolta'
+GROUP BY yr) 
+      AS t
 );
 
 #Question 12
@@ -107,24 +107,24 @@ SELECT title, name
     IN (SELECT movieid FROM casting WHERE actorid IN (SELECT id FROM actor WHERE name = 'Julie Andrews'));
 
 #Question 13
-SELECT name 
-  FROM actor 
-  JOIN casting 
-    ON casting.actorid = actor.id 
- WHERE ord =1 
- GROUP BY name 
-HAVING COUNT(ord) >= 30;
+  SELECT name 
+    FROM actor 
+    JOIN casting 
+      ON casting.actorid = actor.id 
+   WHERE ord =1 
+GROUP BY name 
+  HAVING COUNT(ord) >= 30;
 
 #Question 14
-SELECT title, COUNT(actorid) 
-  FROM movie 
-  JOIN casting 
-    ON movieid = movie.id
-  JOIN actor 
-    ON actorid = actor.id 
-  WHERE yr = 1978 
-  GROUP BY title 
-  ORDER BY COUNT(name) DESC, title;
+  SELECT title, COUNT(actorid) 
+    FROM movie 
+    JOIN casting 
+      ON movieid = movie.id
+    JOIN actor 
+      ON actorid = actor.id 
+   WHERE yr = 1978 
+GROUP BY title 
+ORDER BY COUNT(name) DESC, title;
 
 #Question 15
 SELECT name 

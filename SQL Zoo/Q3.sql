@@ -69,16 +69,16 @@ SELECT *
  WHERE winner = 'Eugene O''Neill';
 
 #Question 13
-SELECT winner, yr, subject 
-  FROM nobel 
- WHERE winner LIKE 'Sir%' 
- ORDER BY yr DESC, winner ASC;
+  SELECT winner, yr, subject 
+    FROM nobel 
+   WHERE winner LIKE 'Sir%' 
+ORDER BY yr DESC, winner ASC;
 
 #Question 14
-SELECT winner, subject
-  FROM nobel
- WHERE yr=1984
- ORDER BY subject IN ('Physics','Chemistry'), subject,winner;
+  SELECT winner, subject
+    FROM nobel
+   WHERE yr=1984
+ORDER BY subject IN ('Physics','Chemistry'), subject,winner;
 
 #Quiz
 1. E

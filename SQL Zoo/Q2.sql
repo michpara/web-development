@@ -65,20 +65,20 @@ SELECT name, capital
    AND capital != name;
 
 #Question 13
-SELECT name 
-  FROM world 
- WHERE name 
-  LIKE '%a%' 
-   AND name 
-  LIKE '%e%' 
-   AND name 
-  LIKE '%i%' 
-   AND name 
-  LIKE '%o%' 
-   AND name 
-  LIKE '%u%' 
-   AND name 
-   NOT LIKE '% %';
+  SELECT name 
+    FROM world 
+   WHERE name 
+    LIKE '%a%' 
+     AND name 
+    LIKE '%e%' 
+     AND name 
+    LIKE '%i%' 
+     AND name 
+    LIKE '%o%' 
+     AND name 
+    LIKE '%u%' 
+     AND name 
+NOT LIKE '% %';
 
 #Quiz
 1. E

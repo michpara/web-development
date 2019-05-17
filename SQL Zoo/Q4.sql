@@ -1,7 +1,8 @@
 #SELECT select
 
 #Question 1
-SELECT name FROM world
+SELECT name 
+  FROM world
  WHERE population >(SELECT population FROM world WHERE name='Russia');
 
 #Question 2

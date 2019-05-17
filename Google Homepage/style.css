@@ -1,8 +1,8 @@
 .toptext{
 	font-size:13px;
+    font-family:arial;
+    position:absolute;
 	top:22px;
-	position:absolute;
-	font-family:arial;
 	color:#191919;
 	cursor:pointer;
 }
@@ -30,57 +30,56 @@
 }
 
 .avatar{
+    position: absolute;
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
-	position: absolute;
 	top:15px;
 	right: 30px;
 	cursor:pointer;
 }
 
 .notification{
+    position: absolute;
     width:20px;
     height:20px;
-    position: absolute;
     top:20px;
     right:80px;
     cursor:pointer;
 }
 
 .menu{
+    position: absolute;
 	width:20px;
 	height:20px;
-	position: absolute;
 	top:20px;
 	right: 125px;
 	cursor:pointer;
 }
 
 .google {
-	max-height: 92px;
+    position: relative;
+    max-height: 92px;
 	max-width: 272px;
-	position: relative;
 	top: 91px;
 	padding-top:109px;
 }
 
 .box {
+    position:relative;
 	width: 484px;
 	height:44px;
-	position:relative;
 	margin-top:-37px;
 	top:150px;
-	outline:none;
 	border:1px solid lightgrey;
 	box-shadow:0px 1px 9px -5px;
+    outline:none;
 }
 
 .box:hover{
 	box-shadow:0px 4px 10px -5px;
 	border:1px solid lightgrey;
 	outline:none;
-
 }
 
 .buttons {
@@ -91,17 +90,35 @@
 
 .bottom{
     font-size:15px;
-	position:absolute;
 	font-family:arial;
+    position:absolute;
 	color:rgba(0,0,0,.54);
 }
 
-.language{
-    font-family:arial;
-    font-size:13px;
-    position:relative;
-    top:-40px;
-    text-align:center;
+.left {
+  font-family:arial;
+  padding-right: 20px;
+  color:#5f6368;
+  float: left;
+  margin: 15px;
+  margin-top: -1px;
+  margin-left:1px;
+}
+
+.right {
+  font-family:arial;
+  padding-right:20px;
+  color:#5f6368;
+  float: left; 
+  float: right;
+  margin: 15px;
+  margin-top: -1px;
+  margin-left:1px;
+}
+
+.left:hover,
+.right:hover {
+  text-decoration: underline;
 }
 
 a{
@@ -115,109 +132,48 @@ a:hover{
 	color: #4c4c4c
 }
 
-
 button {
-  background-color:#f2f2f2;
-  border:none;
   padding:10px;
-  margin:10px;
+  margin:10px; 
+  border-radius: 2px;
+  margin-top:180px;
+  display:inline-block;  
+  background-color:#f2f2f2;
   color:#757575;
   font-size:11pt;
   font-family:arial;
-  border-radius: 2px;
-  margin-top:180px;
-  display:inline-block;
-
+  border:none;
 }
 
 button:hover{
-    cursor:pointer;
-    box-shadow:0px 4px 10px -15px;
     background-color:#f7f7f7;
-	border:1px solid lightgrey;
     color:#000000;
+	border:1px solid lightgrey;
+    box-shadow:0px 4px 10px -15px;
 	outline:none;
-    
+    cursor:pointer;
 }
 
-#Canada{
-    color:rgba(0,0,0,.54);
-    font-size:15px;
-    font-family:arial;
-    cursor:text
-    display:inline;
-    margin-left:25px;
-    margin-top:140px;
+footer a:link,
+footer a:visited {
+  color: #5c5c5c;
+  text-decoration: none;
 }
 
-#Advertising{
-    color: #5f6368;
-    display: inline-block;
-    cursor: pointer;
-    font-size:13px;
-    font-family:arial;
-    margin-left:25px;
-
+footer ul li {
+  display: inline;
+  color: #c6c6c6;
+  margin: 10px;
 }
 
-#Business{
-    color: #5f6368;
-    display: inline-block;
-    cursor: pointer;
-    font-size:13px;
-    font-family:arial;
-    margin-left:28px;
-}
-
-#Privacy{
-    color: #5f6368;
-    display: inline-block;
-    cursor: pointer;
-    font-size:13px;
-    font-family:arial;
-    margin-right:50%;
-
-   
-}
-
-#Terms{
-    color: #5f6368;
-    display: inline-block;
-    cursor: pointer;
-    font-size:13px;
-    font-family:arial;
-    margin-right:25px
-  
-    
-}
-
-#Settings{
-    color: #5f6368;
-    display: inline-block;
-    cursor: pointer;
-    font-size:13px;
-    font-family:arial;
-    margin-right:23px
-
-   
-}
-
-#Advertising:hover{
-    text-decoration:underline;
-}
-
-#Business:hover{
-    text-decoration: :underline;
-}
-
-#Privacy:hover{
-    text-decoration: :underline;
-}
-
-#Terms:hover{
-    text-decoration: :underline;
-}
-
-#Settings:hover{
-    text-decoration: :underline;
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  border-top: 1px solid #c6c6c6;
+  font-size: 13px;
+  font-family:arial;
+  height: 40px;
 }

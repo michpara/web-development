@@ -45,11 +45,11 @@ SELECT name
   LIKE '%a%a%a%';
 
 #Question 8
-SELECT name
-  FROM world
- WHERE name 
-  LIKE '_t%'
- ORDER BY name;
+  SELECT name
+    FROM world
+   WHERE name 
+    LIKE '_t%'
+ORDER BY name;
 
 #Question 9
 SELECT name 

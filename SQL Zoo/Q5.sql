@@ -38,7 +38,7 @@ GROUP BY continent;
   SELECT continent 
     FROM world 
 GROUP BY continent 
-  HAVING sum(population) >= 100000000;
+  HAVING SUM(population) >= 100000000;
 
 #Quiz
 1. C

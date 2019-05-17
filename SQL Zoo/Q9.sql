@@ -72,20 +72,20 @@ SELECT DISTINCT stopa.name, a.company, a.num
  WHERE stopb.name = 'Craiglockhart';
 
 #Question 10
+SELECT a.num, a.company, stopb.name, c.num, c.company
+FROM route a
+JOIN route b ON (a.company = b.company AND a.num = b.num)
+JOIN (route c JOIN route d ON (c.company = d.company AND c.num = d.num))
+JOIN stops stopa ON a.stop = stopa.id
+JOIN stops stopb ON b.stop = stopb.id
+JOIN stops stopc ON c.stop = stopc.id
+JOIN stops stopd ON d.stop = stopd.id
+WHERE stopa.name = 'Craiglockhart'
+  AND stopd.name = 'Lochend'
+  AND stopb.name = stopc.name
+ORDER BY LENGTH(a.num), b.num, stopb.name, LENGTH(c.num), d.num;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Quiz 
+1. C
+2. E
+3. D

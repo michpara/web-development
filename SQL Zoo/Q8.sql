@@ -47,5 +47,29 @@ SELECT dept.name, COUNT(teacher.name)
   GROUP BY dept.name;
 
 #Question 9
+SELECT name, 
+  CASE 
+  WHEN (dept = 1 OR dept = 2) 
+  THEN 'Sci' 
+  ELSE 'Art' 
+  END 
+  FROM teacher ;
 
 #Question 10
+SELECT name, 
+  CASE 
+  WHEN (dept = 1 OR dept = 2) 
+  THEN 'Sci' 
+  WHEN (dept = 3) 
+  THEN 'Art' 
+  ELSE 'None' 
+   END 
+  FROM teacher;
+
+#Quiz
+1. E
+2. C
+3. E
+4. B
+5. A
+6. A

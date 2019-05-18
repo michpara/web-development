@@ -18,8 +18,6 @@ To install the .js file you must have a text-editor, I use sublime, but feel fre
 
 Download RockPaperScissors.js and RockPaperScissors.html onto your computer's desktop. 
 
-Open the RockPaperScissors.html in your browser, and instructions on how to play the game should appear.
-
 # **Built with**
 
 HTML, JavaScript

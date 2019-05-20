@@ -3,45 +3,60 @@
 <head>
 	<link rel="stylesheet" href = "style.css">
 </head>
+
 <body>
+  <button id="clear">Clear</button>
 
-
-	<button id="clear">Clear</button>
-
-<div id = "container">
-</div>
-
+  <div id = "container">
+  </div>
 </body>
 
 <script>
 
-let gridSize = 16;
+	//variables
+	let gridSize = 100;
+	let container = document.getElementById("container");
+	let clear = document.getElementById("clear");
+	let divs = document.getElementsByClassName("div");
 
-let container = document.getElementById("container");
+	//create the grid
+	
+	for(let i = 0; i < gridSize; i++){
+		let gridDiv = document.createElement("div");
+		
+		gridDiv.classList.add("div");
+		container.appendChild(gridDiv);
 
-let clear = document.getElementById("clear");
+		gridDiv.style.width = 400/Math.sqrt(gridSize);
+		gridDiv.style.height = 400/Math.sqrt(gridSize);
+	}
 
-for(let i = 0; i < gridSize; i++){
-	let gridDiv = document.createElement("div");
-	gridDiv.classList.add("div");
-	container.appendChild(gridDiv);
-}
-
-
-let divs = document.getElementsByClassName("div");
-for(let i = 0; i<divs.length; i++){
-  divs[i].addEventListener("mouseover", function(){
+	//colors each grid box when mouse is hovered over it
+	for(let i = 0; i<divs.length; i++){
+	  divs[i].addEventListener("mouseover", function(){
     divs[i].style.background = "black";  
   })
-}
 
-clear.addEventListener("click", function(){
-	for(let i = 0; i< divs.length; i++){
-		divs[i].style.background ="";
 	}
-	gridSize = prompt("What size would you like your grid?: ");
-});
 
+	//clears the entire grid when the button "clear" is clicked
+	clear.addEventListener("click", gridClear);
+
+	//function to colors each grid box when mouse is hovered over it
+	function gridHover(){
+		divs[i].style.background = "black";
+	}
+
+	//function to clear the entire grid when the button "clear" is clicked
+	function gridClear(){
+		for(let i = 0; i<divs.length; i++){
+			divs[i].style.background = "";
+		}
+		gridSize = prompt("What is your name")
+
+	}
+
+	gridSize = 10;
 
 </script>
 </html>

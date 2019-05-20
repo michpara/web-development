@@ -5,8 +5,7 @@ div {
 }
 
 #container div {
-	width: 100px;
-	height: 100px;
+
 	outline: 1px solid;
 	border-color:black;
 	float: left;

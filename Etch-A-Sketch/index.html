@@ -14,11 +14,14 @@
 </body>
 
 <script>
+
+let gridSize = 16;
+
 let container = document.getElementById("container");
 
 let clear = document.getElementById("clear");
 
-for(let i = 0; i < 16; i++){
+for(let i = 0; i < gridSize; i++){
 	let gridDiv = document.createElement("div");
 	gridDiv.classList.add("div");
 	container.appendChild(gridDiv);
@@ -36,7 +39,8 @@ clear.addEventListener("click", function(){
 	for(let i = 0; i< divs.length; i++){
 		divs[i].style.background ="";
 	}
-})
+	gridSize = prompt("What size would you like your grid?: ");
+});
 
 
 </script>

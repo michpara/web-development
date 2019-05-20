@@ -145,13 +145,13 @@ function singleRound(){
 	}
 	
 	if(playerScore == 5){
-		results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
+	    results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
 	    results.innerHTML += "<br />"
 
 	    //disables all buttons
 	    rockButton.disabled = true;
-		paperButton.disabled = true;
-		scissorsButton.disabled = true;
+	    paperButton.disabled = true;
+	    scissorsButton.disabled = true;
 	}
 }
 

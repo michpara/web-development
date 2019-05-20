@@ -15,7 +15,22 @@ let container = document.getElementById("container");
 
 for(let i = 0; i < 16; i++){
 	let gridDiv = document.createElement("div");
+	gridDiv.classList.add("div");
 	container.appendChild(gridDiv);
+}
+
+let grid = document.getElementById("container").getElementsByClassName("div")[0];
+grid.addEventListener("click", changeColor);
+
+function changeColor(){
+	if(!toggle){
+		toggle = true;
+		grid.style.background = black;
+	}
+	else{
+		toggle = false;
+		grid.style.background = "";
+	}
 }
 </script>
 </html>

@@ -5,6 +5,9 @@
 </head>
 <body>
 
+
+	<button id="clear">Clear</button>
+
 <div id = "container">
 </div>
 
@@ -13,24 +16,29 @@
 <script>
 let container = document.getElementById("container");
 
+let clear = document.getElementById("clear");
+
 for(let i = 0; i < 16; i++){
 	let gridDiv = document.createElement("div");
 	gridDiv.classList.add("div");
 	container.appendChild(gridDiv);
 }
 
-let grid = document.getElementById("container").getElementsByClassName("div")[0];
-grid.addEventListener("click", changeColor);
 
-function changeColor(){
-	if(!toggle){
-		toggle = true;
-		grid.style.background = black;
-	}
-	else{
-		toggle = false;
-		grid.style.background = "";
-	}
+let divs = document.getElementsByClassName("div");
+for(let i = 0; i<divs.length; i++){
+  divs[i].addEventListener("mouseover", function(){
+    divs[i].style.background = "black";  
+  })
 }
+
+clear.addEventListener("click", function(){
+	for(let i = 0; i< divs.length; i++){
+		divs[i].style.background ="";
+	}
+})
+
+
 </script>
 </html>
+

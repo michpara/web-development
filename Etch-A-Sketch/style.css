@@ -1,11 +1,9 @@
 div {
 	width: 400px;
 	height: 400px;
-
 }
 
 #container div {
-
 	outline: 1px solid;
 	border-color:black;
 	float: left;

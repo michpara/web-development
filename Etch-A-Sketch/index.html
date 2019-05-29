@@ -11,53 +11,8 @@
   </div>
 </body>
 
-<script>
+<script type="text/javascript" src="script.js"></script>
 
-	//variables
-	let gridSize = 100;
-	let container = document.getElementById("container");
-	let clear = document.getElementById("clear");
-	let divs = document.getElementsByClassName("div");
 
-	//create the grid
-	
-	for(let i = 0; i < gridSize; i++){
-		let gridDiv = document.createElement("div");
-		
-		gridDiv.classList.add("div");
-		container.appendChild(gridDiv);
-
-		gridDiv.style.width = 400/Math.sqrt(gridSize);
-		gridDiv.style.height = 400/Math.sqrt(gridSize);
-	}
-
-	//colors each grid box when mouse is hovered over it
-	for(let i = 0; i<divs.length; i++){
-	  divs[i].addEventListener("mouseover", function(){
-    divs[i].style.background = "black";  
-  })
-
-	}
-
-	//clears the entire grid when the button "clear" is clicked
-	clear.addEventListener("click", gridClear);
-
-	//function to colors each grid box when mouse is hovered over it
-	function gridHover(){
-		divs[i].style.background = "black";
-	}
-
-	//function to clear the entire grid when the button "clear" is clicked
-	function gridClear(){
-		for(let i = 0; i<divs.length; i++){
-			divs[i].style.background = "";
-		}
-		gridSize = prompt("What is your name")
-
-	}
-
-	gridSize = 10;
-
-</script>
 </html>
 

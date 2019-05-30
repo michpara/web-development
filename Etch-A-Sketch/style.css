@@ -1,38 +1,21 @@
 #container{
-    width:50%;
-    height:50%;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:auto;
-    margin-top:auto;
+    max-width: 400px;
+    min-width:400px;
     display:block;
 }
 
-#clear{
+#container div {
+  outline: 1px solid;
+  border-color:black;
+  float: left;
+}
+
+.buttons{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#changeSize{
-	  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#changeColor{
-	  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#container div {
-	outline: 1px solid;
-	border-color:black;
-	float: left;
-}
-
-#container div:hover{
-	background:red;
-}
 

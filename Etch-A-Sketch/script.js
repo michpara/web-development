@@ -3,6 +3,7 @@ let gridSize = 100;
 let container = document.getElementById("container");
 let clear = document.getElementById("clear");
 let divs = document.getElementsByClassName("div");
+let color = document.getElementById("color");
 
 clear.addEventListener("click", gridClear);
 
@@ -14,15 +15,15 @@ function random_rgba() {
 
 //creates grid and allows it to be colored in.
 function createGrid(gridSize){
-	for(let i = 0; i < gridSize; i++){
+	for(let i = 0; i < Math.pow(gridSize, 2); i++){
 
 		let gridDiv = document.createElement("div");
 
 		gridDiv.classList.add("div");
 		container.appendChild(gridDiv)
 
-		gridDiv.style.width = 400/Math.sqrt(gridSize);
-		gridDiv.style.height = 400/Math.sqrt(gridSize);
+		gridDiv.style.width = 400/gridSize;
+		gridDiv.style.height = 400/gridSize;
 	}
 
 	for(let i = 0; i < divs.length; i++){

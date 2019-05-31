@@ -14,12 +14,8 @@ clear.addEventListener("click", gridClear);
 //changes the size of the grid when the button Change Size is clicked
 size.addEventListener("click", changeSize);
 
-//not done
-color.addEventListener("click", function(){
-	removeGrid();
-	createGrid(10, !toggle)
-	toggle = !toggle
-});
+//changes the color used when the Change Color button is clicked
+color.addEventListener("click", changeColor);
 
 //creates grid and allows it to be colored in.
 function createGrid(gridSize, toggle){
@@ -38,7 +34,7 @@ function createGrid(gridSize, toggle){
 	for(let i = 0; i < divs.length; i++){
 		divs[i].addEventListener("mouseover", function(){
 			if(!toggle){
-			divs[i].style.background = 'black';
+				divs[i].style.background = 'black';
 			}
 			else{
 				divs[i].style.background = random_rgba();
@@ -47,7 +43,7 @@ function createGrid(gridSize, toggle){
 	}
 }
 
-//function to clear the entire grid when the button "clear" is clicked
+//clears the entire grid
 function gridClear(){
 	for(let i = 0; i<divs.length; i++){
 		divs[i].style.background = "";
@@ -63,9 +59,16 @@ function removeGrid(){
 
 //changes the size of the grid
 function changeSize(){
-	gridSize = prompt("How many grids do you want per side?");
+	gridSize = prompt("How many squares do you want per side?");
 	removeGrid();
-	createGrid(gridSize, "black");
+	createGrid(gridSize, toggle);
+}
+
+//changes the color of the grid
+function changeColor(){
+	removeGrid();
+	createGrid(gridSize, !toggle)
+	toggle = !toggle
 }
 
 //generates random colors for the grid
@@ -74,4 +77,5 @@ function random_rgba() {
     return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
+//creates the grid when the screen loads for the first time
 createGrid(10, false);

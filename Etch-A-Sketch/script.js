@@ -5,6 +5,8 @@ let clear = document.getElementById("clear");
 let color = document.getElementById("color");
 let size = document.getElementById("size");
 let divs = document.getElementsByClassName("div");
+let toggle = false;
+let gridSize = 10;
 
 //clears the grid when the Clear Grid button is clicked
 clear.addEventListener("click", gridClear);
@@ -13,10 +15,14 @@ clear.addEventListener("click", gridClear);
 size.addEventListener("click", changeSize);
 
 //not done
-color.addEventListener("click", workInProgress);
+color.addEventListener("click", function(){
+	removeGrid();
+	createGrid(10, !toggle)
+	toggle = !toggle
+});
 
 //creates grid and allows it to be colored in.
-function createGrid(gridSize, currentColor){
+function createGrid(gridSize, toggle){
 	let powGridSize = Math.pow(gridSize, 2);
 	for(let i = 0; i < powGridSize; i++){
 
@@ -31,7 +37,12 @@ function createGrid(gridSize, currentColor){
 
 	for(let i = 0; i < divs.length; i++){
 		divs[i].addEventListener("mouseover", function(){
-			divs[i].style.background = currentColor;
+			if(!toggle){
+			divs[i].style.background = 'black';
+			}
+			else{
+				divs[i].style.background = random_rgba();
+			}
 		})
 	}
 }
@@ -62,3 +73,5 @@ function random_rgba() {
     var o = Math.round, r = Math.random, s = 255;
     return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
+
+createGrid(10, false);

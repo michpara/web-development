@@ -13,9 +13,9 @@
 }
 
 .buttons{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display:inline-block;
 }
 
-
+body{
+  text-align:center;
+}

@@ -8,16 +8,19 @@ SQL, Node.js, Ruby and Ruby on Rails.
 ### **Google Homepage**
 
 Website : https://michpara.github.io/Google-Homepage/
+
 Code : https://github.com/michpara/Google-Homepage
 
 ### **Rock, Paper, Scissors**
 
 Website : https://michpara.github.io/Rock-Paper-Scissors/
+
 Code : https://github.com/michpara/Rock-Paper-Scissors
 
 ### **Etch-A-Sketch**
 
 Website : https://michpara.github.io/Etch-A-Sketch/
+
 Code : https://github.com/michpara/Etch-A-Sketch
 
 ### **SQL Zoo (Not a website)**

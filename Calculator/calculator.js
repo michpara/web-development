@@ -28,3 +28,13 @@ function operate(operator, a, b){
 		divide(a, b)
 	}
 }
+
+function display(){
+
+	var buttons = document.getElementsByClassName('button');
+	for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+        document.getElementById('textarea').value = this.value;
+    });
+}
+}

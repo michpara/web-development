@@ -16,7 +16,7 @@ function divide(a, b){
 
 function operate(operator, a, b){
 	if(operator == '+'){
-		a =  add(a, b)
+		add(a, b)
 	}
 	if(operator == '-'){
 		subtract(a, b)
@@ -43,16 +43,24 @@ function displayAnswer(answer){
 
 var buttons = document.getElementsByClassName('button');
 var operation = '';
-var numbers = [];
 var operators = ['+', '-', 'x', '/']
+numbers = []
 
 for( var i = 0; i < buttons.length; i++){
 	buttons[i].addEventListener('click', display(buttons[i]));
-	if(operators.includes(buttons[i].value)){
-		operation = buttons[i].value;
-	}else{
-		numbers.push(buttons[i].value)
+	document.getElementById(buttons[i].id).onclick = function(){
+		numbers.push(buttons[i].id)
 	}
 }
+document.getElementById('=').onclick = function(){
+	document.getElementById('textarea').value += numbers[0] + numbers[1];
+
+}
+
+function addArray(num){
+	numbers.push(num);
+}
+
+
 
 

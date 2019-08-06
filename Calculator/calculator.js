@@ -16,7 +16,7 @@ function divide(a, b){
 
 function operate(operator, a, b){
 	if(operator == '+'){
-		add(a, b)
+		a =  add(a, b)
 	}
 	if(operator == '-'){
 		subtract(a, b)
@@ -29,12 +29,30 @@ function operate(operator, a, b){
 	}
 }
 
-function display(){
+function display(button){
 
-	var buttons = document.getElementsByClassName('button');
-	for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
-        document.getElementById('textarea').value = this.value;
+    button.addEventListener('click', function() {
+        document.getElementById('textarea').value += this.value;
     });
 }
+
+function displayAnswer(answer){
+	document.getElementById('textarea').value = answer
 }
+
+
+var buttons = document.getElementsByClassName('button');
+var operation = '';
+var numbers = [];
+var operators = ['+', '-', 'x', '/']
+
+for( var i = 0; i < buttons.length; i++){
+	buttons[i].addEventListener('click', display(buttons[i]));
+	if(operators.includes(buttons[i].value)){
+		operation = buttons[i].value;
+	}else{
+		numbers.push(buttons[i].value)
+	}
+}
+
+

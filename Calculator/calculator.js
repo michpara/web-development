@@ -57,10 +57,9 @@ document.getElementById('=').onclick = function(){
 
 }
 
-function addArray(num){
-	numbers.push(num);
+document.getElementById('CE').onclick = function(){
+	document.getElementById('textarea').value = ''
 }
-
 
 
 

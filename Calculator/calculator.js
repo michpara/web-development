@@ -36,22 +36,20 @@ function display(button){
     });
 }
 
-function displayAnswer(answer){
-	document.getElementById('textarea').value = answer
-}
-
-
 var buttons = document.getElementsByClassName('button');
 var operation = '';
 var operators = ['+', '-', 'x', '/']
-numbers = []
+var numbers = []
 
-for( var i = 0; i < buttons.length; i++){
+for(var i = 0; i < buttons.length; i++){
 	buttons[i].addEventListener('click', display(buttons[i]));
-	document.getElementById(buttons[i].id).onclick = function(){
-		numbers.push(buttons[i].id)
-	}
+	(function(i){
+		document.getElementById(buttons[i].id).onclick = function(){
+			numbers.push(buttons[i].value)
+		}
+	})(i)
 }
+
 document.getElementById('=').onclick = function(){
 	document.getElementById('textarea').value += numbers[0] + numbers[1];
 
@@ -60,6 +58,7 @@ document.getElementById('=').onclick = function(){
 document.getElementById('CE').onclick = function(){
 	document.getElementById('textarea').value = ''
 }
+
 
 
 

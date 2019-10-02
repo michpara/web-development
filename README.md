@@ -23,6 +23,10 @@ Website : https://michpara.github.io/Etch-A-Sketch/
 
 Code : https://github.com/michpara/Etch-A-Sketch
 
+### **Calculator**
+
+Website : https://michpara.github.io/Calculator/
+
 ### **SQL Zoo (Not a website)**
 
 Code : https://github.com/michpara/Web-Development/tree/master/SQL%20Zoo

@@ -29,3 +29,6 @@ Code : https://github.com/michpara/Web-Development/tree/master/SQL%20Zoo
 
 ### **My First Rails App**
 Code : https://github.com/michpara/My-First-Rails-App
+
+### **Ruby**
+Code : https://github.com/michpara/Ruby

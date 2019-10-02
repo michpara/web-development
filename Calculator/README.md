@@ -1,6 +1,8 @@
 # **Calculator**
 
-A calculator
+A calculator.
+
+To view the website, visit : https://michpara.github.io/Calculator/
 
 ## **Getting Started**
 

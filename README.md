@@ -27,6 +27,8 @@ Code : https://github.com/michpara/Etch-A-Sketch
 
 Website : https://michpara.github.io/Calculator/
 
+Code : https://github.com/michpara/Calculator
+
 ### **SQL Zoo (Not a website)**
 
 Code : https://github.com/michpara/Web-Development/tree/master/SQL%20Zoo

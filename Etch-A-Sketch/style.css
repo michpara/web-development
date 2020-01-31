@@ -7,15 +7,15 @@
 }
 
 #container div {
-  outline: 1px solid;
-  border-color:black;
-  float: left;
+    outline: 1px solid;
+    border-color:black;
+    float: left;
 }
 
 .buttons{
-  display:inline-block;
+    display:inline-block;
 }
 
 body{
-  text-align:center;
+    text-align:center;
 }

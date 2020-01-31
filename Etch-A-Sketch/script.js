@@ -73,8 +73,8 @@ function changeColor(){
 
 //generates random colors for the grid
 function random_rgba() {
-    var o = Math.round, r = Math.random, s = 255;
-    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+   	 var o = Math.round, r = Math.random, s = 255;
+   	 return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
 //creates the grid when the screen loads for the first time

@@ -70,8 +70,8 @@ function restart(){
 
 //displays the score
 function displayScore(){
-    score.textContent = `COMPUTER SCORE: ${computerScore} | PLAYER SCORE: ${playerScore}`;
-    scoreResults.appendChild(score);
+    	score.textContent = `COMPUTER SCORE: ${computerScore} | PLAYER SCORE: ${playerScore}`;
+    	scoreResults.appendChild(score);
 }
 
 //returns the computers choice (rock, paper or scissor)
@@ -145,13 +145,12 @@ function singleRound(){
 	}
 	
 	if(playerScore == 5){
-	    results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
-	    results.innerHTML += "<br />"
+	    	results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
+	    	results.innerHTML += "<br />"
 
-	    //disables all buttons
-	    rockButton.disabled = true;
-	    paperButton.disabled = true;
-	    scissorsButton.disabled = true;
+	    	//disables all buttons
+	    	rockButton.disabled = true;
+	    	paperButton.disabled = true;
+	    	scissorsButton.disabled = true;
 	}
 }
-

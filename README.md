@@ -31,7 +31,7 @@ Code : https://github.com/michpara/Calculator
 
 ### **SQL Zoo (Not a website)**
 
-Code : https://github.com/michpara/Web-Development/tree/master/SQL%20Zoo
+Code : https://github.com/michpara/SQL-Zoo
 
 ### **My First Rails App**
 Code : https://github.com/michpara/My-First-Rails-App

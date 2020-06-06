@@ -1,4 +1,3 @@
-
 //initial variables
 let container = document.getElementById("container");
 let clear = document.getElementById("clear");
@@ -67,8 +66,8 @@ function changeSize(){
 //changes the color of the grid
 function changeColor(){
 	removeGrid();
-	createGrid(gridSize, !toggle)
-	toggle = !toggle
+	createGrid(gridSize, !toggle);
+	toggle = !toggle;
 }
 
 //generates random colors for the grid

@@ -23,13 +23,11 @@ class Timer
 			time_string += hours.to_s + ":"
 		end
 
-
 		if minutes < 10
 			time_string += "0" + minutes.to_s + ":"		
 		else
 			time_string += minutes.to_s + ":"
 		end
-
 
 		if seconds < 10
 			time_string += "0" + seconds.to_s 	

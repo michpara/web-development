@@ -6,7 +6,7 @@ let computerScore = 0;
 
 //divs
 const results = document.querySelector("#results");
-const scoreResults = document.querySelector('#score')
+const scoreResults = document.querySelector('#score');
 
 //buttons
 let rockButton = document.querySelector("#rockButton");
@@ -27,27 +27,26 @@ let score = document.createElement('p');
 //playerSelection is now rock and a round is played
 function rockPlay(){
 	playerSelection = "rock";
-	singleRound()
+	singleRound();
 	displayScore();
 }
 
 //playerSelection is now paper and a round is played
 function paperPlay(){
 	playerSelection = "paper";
-	singleRound()
+	singleRound();
 	displayScore();
 }
 
 //playerSelection is now scissors and a round is played
 function scissorsPlay(){
 	playerSelection = "scissors"
-	singleRound()
+	singleRound();
 	displayScore();
 }
 
 //restarts the game
 function restart(){
-
 	//remove all results
 	while(results.firstChild){
 		results.removeChild(results.firstChild);
@@ -70,8 +69,8 @@ function restart(){
 
 //displays the score
 function displayScore(){
-    	score.textContent = `COMPUTER SCORE: ${computerScore} | PLAYER SCORE: ${playerScore}`;
-    	scoreResults.appendChild(score);
+	score.textContent = `COMPUTER SCORE: ${computerScore} | PLAYER SCORE: ${playerScore}`;
+	scoreResults.appendChild(score);
 }
 
 //returns the computers choice (rock, paper or scissor)
@@ -85,14 +84,12 @@ function singleRound(){
 	let computerSelection = computerPlay();
 
 	if(playerScore < 5 && computerScore < 5){ 
-
 		if(playerSelection.toLowerCase() == "rock"){
 			if(computerSelection == "paper"){
 				results.innerHTML += `You lose! ${computerSelection} beats ${playerSelection.toLowerCase()}.`;
 				results.innerHTML += "<br />";
 				computerScore++;
 			}
-
 			if(computerSelection == "scissors"){
 				results.innerHTML += `You win! ${playerSelection.toLowerCase()} beats ${computerSelection}.`;
 				results.innerHTML += "<br />";
@@ -106,7 +103,6 @@ function singleRound(){
 				results.innerHTML += "<br />";
 				computerScore++;			
 			}
-
 			if(computerSelection == "rock"){
 				results.innerHTML += `You win! ${playerSelection.toLowerCase()} beats ${computerSelection}.`;
 				results.innerHTML += "<br />";
@@ -136,7 +132,7 @@ function singleRound(){
 		
 	if(computerScore == 5 ){
 		results.innerHTML += `The winner is the computer, with a score of ${computerScore}.`;
-		results.innerHTML += "<br />"
+		results.innerHTML += "<br />";
 
 		//disables all buttons
 		rockButton.disabled = true;
@@ -145,12 +141,12 @@ function singleRound(){
 	}
 	
 	if(playerScore == 5){
-	    	results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
-	    	results.innerHTML += "<br />"
+    	results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
+    	results.innerHTML += "<br />"
 
-	    	//disables all buttons
-	    	rockButton.disabled = true;
-	    	paperButton.disabled = true;
-	    	scissorsButton.disabled = true;
+    	//disables all buttons
+    	rockButton.disabled = true;
+    	paperButton.disabled = true;
+    	scissorsButton.disabled = true;
 	}
 }

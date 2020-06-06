@@ -29,7 +29,7 @@ Website : https://michpara.github.io/Calculator/
 
 Code : https://github.com/michpara/Calculator
 
-### **SQL Zoo (Not a website)**
+### **SQL Zoo**
 
 Code : https://github.com/michpara/SQL-Zoo
 

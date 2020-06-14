@@ -1,9 +1,11 @@
 # **Web Development**
 
-This repository contains all of my personal web development projects. It includes projects written in HTML, CSS, JavaScript,
-SQL, Node.js, Ruby and Ruby on Rails.
+This repository contains all of my projects from the Web Development curriculum The Odin Project. It includes projects written in HTML, CSS, JavaScript,
+SQL, Node.js, Ruby and Ruby on Rails. These projects are in order of completion. 
 
-## **Websites**
+## **Project**
+
+These projects are listed in order of completion. The further down you go, the more experience I had.
 
 ### **Google Homepage**
 

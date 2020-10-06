@@ -47,7 +47,7 @@ These projects are listed in order of completion. The further down you go, the m
   
   Code : https://github.com/michpara/TicTacToe
   
-## **Course: SQL (COMPLETED)**
+## **Course: Databases (COMPLETED)**
 
   ### **SQL Zoo**
 

@@ -7,36 +7,48 @@ SQL, Node.js, Ruby and Ruby on Rails. These projects are in order of completion.
 
 These projects are listed in order of completion. The further down you go, the more experience I had.
 
-### **Google Homepage**
+## Course: Web Development 101 (COMPLETED)
 
-Website : https://michpara.github.io/Google-Homepage/
+  ### **Google Homepage (HTML, CSS)**
 
-Code : https://github.com/michpara/Google-Homepage
+  Website : https://michpara.github.io/Google-Homepage/
 
-### **Rock, Paper, Scissors**
+  Code : https://github.com/michpara/Google-Homepage
 
-Website : https://michpara.github.io/Rock-Paper-Scissors/
+  ### **Rock, Paper, Scissors (HTML, JavaScript)**
 
-Code : https://github.com/michpara/Rock-Paper-Scissors
+  Website : https://michpara.github.io/Rock-Paper-Scissors/
 
-### **Etch-A-Sketch**
+  Code : https://github.com/michpara/Rock-Paper-Scissors
 
-Website : https://michpara.github.io/Etch-A-Sketch/
+  ### **Etch-A-Sketch (HTML, CSS, JavaScript)**
 
-Code : https://github.com/michpara/Etch-A-Sketch
+  Website : https://michpara.github.io/Etch-A-Sketch/
 
-### **Calculator**
+  Code : https://github.com/michpara/Etch-A-Sketch
 
-Website : https://michpara.github.io/Calculator/
+  ### **Calculator (HTML, JavaScript)**
 
-Code : https://github.com/michpara/Calculator
+  Website : https://michpara.github.io/Calculator/
 
-### **SQL Zoo**
+  Code : https://github.com/michpara/Calculator
 
-Code : https://github.com/michpara/SQL-Zoo
+  ### **My First Rails App (Ruby on Rails)**
+  
+  Code : https://github.com/michpara/My-First-Rails-App
 
-### **My First Rails App**
-Code : https://github.com/michpara/My-First-Rails-App
+  ### **Ruby (Ruby)**
+  
+  Code : https://github.com/michpara/Ruby
+  
+## **Course: Ruby**
 
-### **Ruby**
-Code : https://github.com/michpara/Ruby
+  ### **Tic Tac Toe (Ruby)**
+  
+  Code : https://github.com/michpara/TicTacToe
+  
+## **Course: SQL (COMPLETED)**
+
+  ### **SQL Zoo**
+
+  Code : https://github.com/michpara/SQL-Zoo

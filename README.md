@@ -41,7 +41,7 @@ These projects are listed in order of completion. The further down you go, the m
   
   Code : https://github.com/michpara/Ruby
   
-## **Course: Ruby**
+## **Course: Ruby Programming**
 
   ### **Tic Tac Toe (Ruby)**
   

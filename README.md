@@ -47,6 +47,10 @@ These projects are listed in order of completion. The further down you go, the m
   
   Code : https://github.com/michpara/TicTacToe
   
+  ### **Event Manager (HTML, Ruby)**
+  Note: For this project, we were given a tutorial to follow.
+  
+  Code: https://github.com/michpara/Event-Manager
 ## **Course: Databases (COMPLETED)**
 
   ### **SQL Zoo**

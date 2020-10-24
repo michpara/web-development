@@ -44,8 +44,12 @@ These projects are listed in order of completion. The further down you go, the m
 ## **Course: Ruby Programming**
 
   ### **Tic Tac Toe (Ruby)**
-  
+ 
   Code : https://github.com/michpara/TicTacToe
+  
+  ### **WIP: Mastermind (Ruby)**
+  
+  Code: https://github.com/michpara/Mastermind
   
   ### **Event Manager (HTML, Ruby)**
   Note: For this project, we were given a tutorial to follow.

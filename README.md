@@ -46,8 +46,8 @@ These projects are listed in order of completion. The further down you go, the m
   ### **Tic Tac Toe (Ruby)**
  
   Code : https://github.com/michpara/TicTacToe
-  
-  ### **WIP: Mastermind (Ruby)**
+ 
+  ### **Mastermind (Ruby)**
   
   Code: https://github.com/michpara/Mastermind
   

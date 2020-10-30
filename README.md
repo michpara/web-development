@@ -55,6 +55,10 @@ These projects are listed in order of completion. The further down you go, the m
   Note: For this project, we were given a tutorial to follow.
   
   Code: https://github.com/michpara/Event-Manager
+  
+  ### **Recursion (Ruby)**
+  
+  Code: https://github.com/michpara/Recursion
 ## **Course: Databases (COMPLETED)**
 
   ### **SQL Zoo**

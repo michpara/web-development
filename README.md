@@ -67,6 +67,10 @@ These projects are listed in **order of completion**. The further down you go, t
   ### **Recursion (Ruby)**
   
   Code: https://github.com/michpara/Recursion
+  
+  ### ** WIP: Data Structures (Ruby)**
+  
+  Code: https://github.com/michpara/Data-Structures
 
 ## **Course: Databases (COMPLETED)**
 

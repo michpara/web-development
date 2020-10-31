@@ -56,7 +56,7 @@ These projects are listed in order of completion. The further down you go, the m
   
   Code: https://github.com/michpara/Event-Manager
   
-  ### **WIP: File I/O and Serialization**
+  ### **File I/O and Serialization**
   
   Code: https://github.com/michpara/File-I-O-and-Serialization
   

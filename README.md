@@ -1,13 +1,15 @@
 # **Web Development**
 
-This repository contains all of my projects from the Web Development curriculum The Odin Project. It includes projects written in HTML, CSS, JavaScript,
-SQL, Node.js, Ruby and Ruby on Rails. These projects are in order of completion. 
+This repository contains all of my projects from the Web Development curriculum **The Odin Project**. It includes projects written in HTML, CSS, JavaScript,
+SQL, Node.js, Ruby and Ruby on Rails. These projects are in **order of completion**. 
 
 ## **Project**
 
-These projects are listed in order of completion. The further down you go, the more experience I had.
+These projects are listed in **order of completion**. The further down you go, the more experience I had.
 
 ## Course: Web Development 101 (COMPLETED)
+  
+  In this course, I learned the basic tools and technologies that every web developer should know.
 
   ### **Google Homepage (HTML, CSS)**
 
@@ -41,7 +43,9 @@ These projects are listed in order of completion. The further down you go, the m
   
   Code : https://github.com/michpara/Ruby
   
-## **Course: Ruby Programming**
+## **Course: Ruby Programming (Work In Progress)**
+
+  In this course, we covered Object Oriented Design, Testing and Data Structures in Ruby.
 
   ### **Tic Tac Toe (Ruby)**
  
@@ -63,7 +67,10 @@ These projects are listed in order of completion. The further down you go, the m
   ### **Recursion (Ruby)**
   
   Code: https://github.com/michpara/Recursion
+
 ## **Course: Databases (COMPLETED)**
+
+  In this course, we learned about relational databases and worked with them using SQL.
 
   ### **SQL Zoo**
 

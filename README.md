@@ -1,4 +1,4 @@
-# **Web Development**
+# **Web Development**  <img src="https://media.giphy.com/media/d9IfL7seBexHLct75B/giphy.gif" width="100">
 
 This repository contains all of my projects from the Web Development curriculum **The Odin Project**. It includes projects written in HTML, CSS, JavaScript,
 SQL, Node.js, Ruby and Ruby on Rails. These projects are in **order of completion**. 

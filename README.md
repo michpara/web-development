@@ -71,6 +71,10 @@ These projects are listed in **order of completion**. The further down you go, t
   ### ** WIP: Data Structures (Ruby)** :gem:
   
   Code: https://github.com/michpara/Data-Structures
+  
+  ### ** WIP: Testing Your Ruby COde (Ruby, Rspec)**
+  
+  Code: https://github.com/michpara/Testing-Your-Ruby-Code
 
 ## **Course: Databases (COMPLETED)**
 

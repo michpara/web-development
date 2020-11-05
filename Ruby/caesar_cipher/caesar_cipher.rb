@@ -4,7 +4,7 @@ def caesar_cipher(text, shift)
 
 	array = text.split("")
 
-	for i in 0...array.length-1
+	for i in 0...array.length
 		char = array[i].downcase
 		if(alphabet.include?(char))
 			newIndex = alphabet.index(char) + shift

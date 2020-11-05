@@ -72,7 +72,7 @@ These projects are listed in **order of completion**. The further down you go, t
   
   Code: https://github.com/michpara/Data-Structures
   
-  ### **WIP: Testing Your Ruby COde (Ruby, Rspec)** :heavy_check_mark:
+  ### **WIP: Testing Your Ruby Code (Ruby, Rspec)** :heavy_check_mark:
   
   Code: https://github.com/michpara/Testing-Your-Ruby-Code
 

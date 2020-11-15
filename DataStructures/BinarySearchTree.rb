@@ -1,8 +1,7 @@
 class Node
 
 	include Comparable
-	attr_accessor :left, :right
-	attr_reader :data
+	attr_accessor :left, :right, :data
 
 	def <=>(other_data)
 		other_data <=> data
@@ -40,15 +39,15 @@ class Tree
 	def insert(data)
 		node = Node.new(data)
 		current = @root
-		while(current != nil)
+		while current
 			if node < current
-				if(current.left == nil)
+				if current.left
 					current.left = node
 					current = current.left
 				end
 				current = current.left
 			elsif node > current
-				if current.right == nil
+				if current.right
 					current.right = node
 					current = current.right
 				end
@@ -60,71 +59,43 @@ class Tree
 		current = node
 	end
 
-	def delete(data)
-		node = Node.new(data)
-		current = @root
-		parent = nil
-		while(current != nil)
-			if node < current
-				puts "going left"
-				parent = current
-				current = current.left
-			elsif node > current
-				puts "going right"
-				parent = current
-				current = current.right
-			else
-				if(current.left == nil and current.right == nil)
-					puts "leaf node"
-					if parent > node
-						parent.left = nil
-					elsif parent < node
-						parent.right = nil
-					end
-				elsif(current.left == nil or current.right == nil)
-					puts "single node"
-					if current.left ==  nil
-						if parent > node
-							parent.left = current.right
-						elsif parent < node
-							parent.right = current.right
-						end
-					elsif current.right == nil
-						if parent > node
-							parent.left = current.left
-						elsif parent < node
-							parent.right = current.left
-						end
-					end
-				#else
-				#	temp_parent = temp
-				#	temp = current.right
-				#	while(temp.left != nil)
-				#		temp_parent = temp
-				#		temp = temp.left
-				#	end
-				#	if parent > current
-				#		parent.left = temp
-				#		temp_parent.left = nil
-				#		temp.right = current.right
-				#		current.right = nil
-				#		current.left = nil
-				#	elsif parent < current
-				#		parent.right = temp
-				#		temp_parent.left = nil
-				#		temp.right = current.right
-				#		current.right = nil
-				#		current.left = nil
-				#	end
-				end
-				return nil
-			end	
+	def delete(root = @root, data)
+		if root.nil?
+			return root
 		end
-	end	
+
+		if data < root.data
+			root.left = delete(root.left, data)
+		elsif data > root.data
+			root.right = delete(root.right, data)
+		else
+			if root.left.nil?
+				temp = root.right
+				root = nil
+				return temp
+			elsif root.right.nil?
+				temp = root.left
+				root = nil
+				return temp
+			end
+
+			current = root.right
+
+			while current.left
+				current = current.left
+			end
+
+			temp = current
+			root.data = temp.data
+			root.right = delete(root.right, temp.data)
+		end
+
+		return root
+	end
 
 	def find(value)
 		current = @root
-		while(current.data != value)
+		while current.data != value
 			if value > current.data
 				current = current.right
 			elsif value < current.data
@@ -144,13 +115,13 @@ class Tree
 
 		queue.unshift(root)
 
-		while(!queue.empty?)
+		while !queue.empty?
 			current = queue[queue.length-1]
 			results.append(current.data)
-			if !current.left.nil?
+			if current.left
 				queue.unshift(current.left)
 			end
-			if !current.right.nil?
+			if current.right
 				queue.unshift(current.right)
 			end
 			queue.pop()
@@ -160,7 +131,7 @@ class Tree
 	end
 
 	def inorder(root = @root, values = [])
-		if !root.nil?
+		if root
 			inorder(root.left, values)
 			values.push(root.data)
 			inorder(root.right, values)
@@ -169,7 +140,7 @@ class Tree
 	end
 
 	def preorder(root = @root, values = [])
-		if !root.nil?
+		if root
 			values.push(root.data)
 			preorder(root.left, values)
 			preorder(root.right, values)
@@ -178,7 +149,7 @@ class Tree
 	end
 
 	def postorder(root = @root, values = [])
-		if !root.nil?
+		if root
 			postorder(root.left, values)
 			postorder(root.right, values)
 			values.push(root.data)
@@ -254,6 +225,7 @@ class Tree
 	end
 end
 
+#main function
 array = Array.new(15) {rand(1..100)}
 
 tree = Tree.new(array)
@@ -283,5 +255,3 @@ puts tree.level_order()
 puts tree.preorder()
 puts tree.postorder()
 puts tree.inorder()
-
-tree.pretty_print

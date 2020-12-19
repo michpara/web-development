@@ -35,10 +35,6 @@ These projects are listed in **order of completion**. The further down you go, t
 
   Code : https://github.com/michpara/Calculator
 
-  ### **My First Rails App (Ruby on Rails)** :train:
-  
-  Code : https://github.com/michpara/My-First-Rails-App
-
   ### **Ruby (Ruby)** :gem:
   
   Code : https://github.com/michpara/Ruby

@@ -34,14 +34,14 @@ These projects are listed in **order of completion**. The further down you go, t
   Website : https://michpara.github.io/Calculator/
 
   Code : https://github.com/michpara/Calculator
-
-  ### **Ruby (Ruby)** :gem:
-  
-  Code : https://github.com/michpara/Ruby
   
 ## **Course: Ruby Programming (Work In Progress)**
 
   In this course, we covered Object Oriented Design, Testing and Data Structures in Ruby.
+  
+  ### **Ruby (Ruby)** :gem:
+  
+  Code : https://github.com/michpara/Ruby
 
   ### **Tic Tac Toe (Ruby)** :o: :heavy_multiplication_x:
  

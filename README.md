@@ -64,7 +64,7 @@ These projects are listed in **order of completion**. The further down you go, t
   
   Code: https://github.com/michpara/Recursion
   
-  ### **WIP: Data Structures (Ruby)** :gem:
+  ### **Data Structures (Ruby)** :gem:
   
   Code: https://github.com/michpara/Data-Structures
   

@@ -1,13 +1,13 @@
 function add(a, b){
-	return parseInt(a) + parseInt(b);
+	return parseFloat(a) + parseFloat(b);
 }
 
 function subtract(a, b){
-	return parseInt(a) - parseInt(b);
+	return parseFloat(a) - parseFloat(b);
 }
 
 function multiply(a, b){
-	return parseInt(a) * parseInt(b);
+	return parseFloat(a) * parseFloat(b);
 }
 
 function divide(a, b){
@@ -16,7 +16,7 @@ function divide(a, b){
 		var e = new Error('Can\'t divide by 0!'); 
 		throw e;
 	}
-	return parseInt(a) / parseInt(b);
+	return parseFloat(a) / parseFloat(b);
 }
 
 function operate(operator, a, b){

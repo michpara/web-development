@@ -13,7 +13,7 @@ These projects are listed in **order of completion**. The further down you go, t
 
   ### **Google Homepage (HTML, CSS)** :computer:
   
-  ![alt text](https://github.com/michpara/Web-Development/blob/images/google-homepage.png?raw=true)
+  ![Screenshot](images/google-homepage.png)
 
   Website : https://michpara.github.io/Google-Homepage/
 

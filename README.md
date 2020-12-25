@@ -12,6 +12,8 @@ These projects are listed in **order of completion**. The further down you go, t
   In this course, I learned the basic tools and technologies that every web developer should know.
 
   ### **Google Homepage (HTML, CSS)** :computer:
+  
+  ![alt text](https://github.com/michpara/Web-Development/blob/images/google-homepage.png?raw=true)
 
   Website : https://michpara.github.io/Google-Homepage/
 

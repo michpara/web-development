@@ -19,7 +19,7 @@ These projects are listed in **order of completion**. The further down you go, t
 
   Code : https://github.com/michpara/Google-Homepage
 
-  ### **Rock, Paper, Scissors (HTML, JavaScript)** :scissors:
+  ### **Rock, Paper, Scissors (HTML, CSS, JavaScript)** :scissors:
 
   Website : https://michpara.github.io/Rock-Paper-Scissors/
 
@@ -33,7 +33,7 @@ These projects are listed in **order of completion**. The further down you go, t
 
   Code : https://github.com/michpara/Etch-A-Sketch
 
-  ### **Calculator (HTML, JavaScript)** :heavy_division_sign:
+  ### **Calculator (HTML, CSS, JavaScript)** :heavy_division_sign:
   
 ![](gifs/calculator.gif)
 

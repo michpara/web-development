@@ -1,6 +1,6 @@
 # **Google Homepage**
 
-![](google-homepage.gif)
+![](gifs/google-homepage.gif)
 
 Using HTML and CSS, I deconstructed and rebuilt the front-end for the google homepage.
 

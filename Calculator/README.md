@@ -1,6 +1,6 @@
 # **Calculator**
 
-![](calculator.gif)
+![](gifs/calculator.gif)
 
 A calculator using HTML, CSS and JavaScript.
 

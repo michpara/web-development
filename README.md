@@ -21,7 +21,7 @@ These projects are listed in **order of completion**. The further down you go, t
 
   ### **Rock, Paper, Scissors (HTML, CSS, JavaScript)** :scissors:
 
-![](rps.gif)
+![](gifs/rps.gif)
 
   Website : https://michpara.github.io/Rock-Paper-Scissors/
 

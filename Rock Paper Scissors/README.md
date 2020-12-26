@@ -1,6 +1,6 @@
 # **Rock Paper Scissors**
 
-![](rps.gif)
+![](gifs/rps.gif)
 
 A simple implementation of grade-school classic “rock paper scissors” using JavaScript and HTML.
 

@@ -27,7 +27,7 @@ These projects are listed in **order of completion**. The further down you go, t
 
   ### **Etch-A-Sketch (HTML, CSS, JavaScript)** :notebook:
   
-    ![](gifs/etch-a-sketch.gif)
+ ![](gifs/etch-a-sketch.gif)
 
   Website : https://michpara.github.io/Etch-A-Sketch/
 
@@ -35,7 +35,7 @@ These projects are listed in **order of completion**. The further down you go, t
 
   ### **Calculator (HTML, JavaScript)** :heavy_division_sign:
   
-  ![](gifs/calculator.gif)
+![](gifs/calculator.gif)
 
   Website : https://michpara.github.io/Calculator/
 

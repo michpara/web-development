@@ -26,12 +26,16 @@ These projects are listed in **order of completion**. The further down you go, t
   Code : https://github.com/michpara/Rock-Paper-Scissors
 
   ### **Etch-A-Sketch (HTML, CSS, JavaScript)** :notebook:
+  
+    ![](gifs/etch-a-sketch.gif)
 
   Website : https://michpara.github.io/Etch-A-Sketch/
 
   Code : https://github.com/michpara/Etch-A-Sketch
 
   ### **Calculator (HTML, JavaScript)** :heavy_division_sign:
+  
+  ![](gifs/calculator.gif)
 
   Website : https://michpara.github.io/Calculator/
 

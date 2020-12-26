@@ -27,6 +27,9 @@ let score = document.createElement('p');
 //playerSelection is now rock and a round is played
 function rockPlay(){
 	playerSelection = "rock";
+	while(results.firstChild){
+		results.removeChild(results.firstChild);
+	}
 	singleRound();
 	displayScore();
 }
@@ -34,6 +37,9 @@ function rockPlay(){
 //playerSelection is now paper and a round is played
 function paperPlay(){
 	playerSelection = "paper";
+	while(results.firstChild){
+		results.removeChild(results.firstChild);
+	}
 	singleRound();
 	displayScore();
 }
@@ -41,6 +47,9 @@ function paperPlay(){
 //playerSelection is now scissors and a round is played
 function scissorsPlay(){
 	playerSelection = "scissors"
+	while(results.firstChild){
+		results.removeChild(results.firstChild);
+	}
 	singleRound();
 	displayScore();
 }
@@ -131,6 +140,9 @@ function singleRound(){
 	}
 		
 	if(computerScore == 5 ){
+		while(results.firstChild){
+			results.removeChild(results.firstChild);
+		}
 		results.innerHTML += `The winner is the computer, with a score of ${computerScore}.`;
 		results.innerHTML += "<br />";
 
@@ -141,6 +153,9 @@ function singleRound(){
 	}
 	
 	if(playerScore == 5){
+		while(results.firstChild){
+			results.removeChild(results.firstChild);
+		}
     	results.innerHTML += `The winner is you, with a score of ${playerScore}.`;
     	results.innerHTML += "<br />"
 

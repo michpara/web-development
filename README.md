@@ -81,6 +81,8 @@ These projects are listed in **order of completion**. The further down you go, t
   Code: https://github.com/michpara/Testing-Your-Ruby-Code
 
 ## **Course: Ruby on Rails (Work In Progress)**
+
+  In this course, we learned how to fully craft a site's backend using the Model-View-Controller design pattern.
   
   ### **Blog App (HTML, Ruby, Ruby on Rails)** :pencil:
   

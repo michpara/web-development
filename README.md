@@ -80,6 +80,16 @@ These projects are listed in **order of completion**. The further down you go, t
   
   Code: https://github.com/michpara/Testing-Your-Ruby-Code
 
+## **Course: Ruby on Rails (Work In Progress)**
+  
+  ### **Blog App (HTML, Ruby, Ruby on Rails)** :pencil:
+  
+  Note: For this project, we were given a tutorial to follow.
+
+  Code: https://github.com/michpara/Blog
+  
+  Website: https://michelle-blog-app.herokuapp.com/
+
 ## **Course: Databases (COMPLETED)**
 
   In this course, we learned about relational databases and worked with them using SQL.

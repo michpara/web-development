@@ -1,4 +1,4 @@
-# **Ruby**
+# **Ruby** <img src="https://media.giphy.com/media/vDKeAFPrMRW9PqChq8/giphy.gif" width="100">
 
 Four Ruby Exercises.
 

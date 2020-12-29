@@ -5,7 +5,7 @@ SQL, Node.js, Ruby and Ruby on Rails. These projects are in **order of completio
 
 ## **Project**
 
-These projects are listed in **order of completion**. The further down you go, the more experience I had.
+These projects are listed in **ORDER OF COMPLETION**. The further down you go, the more experience I had.
 
 ## Course: Web Development 101 (COMPLETED) 
   
@@ -87,11 +87,11 @@ These projects are listed in **order of completion**. The further down you go, t
   ### **Blog App (HTML, Ruby, Ruby on Rails)** :pencil:
   
   Note: For this project, we were given a tutorial to follow.
-
-  Code: https://github.com/michpara/Blog
   
   Website: https://michelle-blog-app.herokuapp.com/
 
+  Code: https://github.com/michpara/Blog
+  
 ## **Course: Databases (COMPLETED)**
 
   In this course, we learned about relational databases and worked with them using SQL.

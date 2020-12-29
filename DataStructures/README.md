@@ -1,4 +1,6 @@
-# Data Structures
+# Data Structures <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100">
+
+Players can choose to be the guesser or the creator of the secret code
 
 Three projects focused on learning and applying data structures.
 

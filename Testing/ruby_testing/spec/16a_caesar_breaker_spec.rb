@@ -43,7 +43,9 @@ describe CaesarBreaker do
     # Located inside #decrypt (Public Script Method)
 
     # Method with Outgoing Command -> Test that a message is sent
-    xit 'sends translate 26 times' do
+    it 'sends translate 26 times' do
+      expect(translator).to receive(:translate).exactly(26).times 
+      phrase.create_decrypted_messages
     end
   end
 
@@ -83,14 +85,22 @@ describe CaesarBreaker do
       # Write the following 3 tests:
 
       # Method with Outgoing Command -> Test that a message is sent
-      xit 'opens a new File' do
+      it 'opens a new File' do
+        expect(File).to receive(:open)
+        phrase.save_decrypted_messages
       end
 
       # Method with Outgoing Command -> Test that a message is sent
-      xit 'makes new directory' do
+      it 'makes new directory' do
+        expect(Dir).to receive(:exist?).and_return(false)
+        expect(Dir).to receive(:mkdir)
+        phrase.save_decrypted_messages
       end
 
-      xit 'does not make new directory' do
+      it 'does not make new directory' do
+        expect(Dir).to receive(:exist?).and_return(true)
+        expect(Dir).not_to receive(:mkdir)
+        phrase.save_decrypted_messages
       end
     end
 
@@ -128,7 +138,9 @@ describe CaesarBreaker do
   describe '#save_to_yaml' do
     # Method with Outgoing Command -> Test that a message is sent
 
-    xit 'dumps to yaml' do
+    it 'dumps to yaml' do
+      expect(YAML).to receive(:dump)
+      phrase.save_decrypted_messages
     end
   end
 end

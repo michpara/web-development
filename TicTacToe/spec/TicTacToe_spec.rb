@@ -6,6 +6,29 @@ describe Board do
 	let(:player_one) { double('player', name: 'Michelle', symbol: 'X') }
 	let(:player_two) { double('player', name: 'Carmen', symbol: 'O') }
 
+	describe '#fill' do
+		context 'when fill is called on a position' do
+			it "fills the position with the right symbol" do
+				horizontal, vertical = 1, 2
+				board.instance_variable_set(:@board, [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]) 
+				board.fill(horizontal, vertical, 'O')
+				symbol = board.get(horizontal, vertical)
+				expect(symbol).to eq('O')
+			end
+		end
+	end
+
+	describe '#get' do
+		context 'when get is called on a position' do
+			it "returns the right symbol for the position" do
+				horizontal, vertical = 0, 0
+				board.instance_variable_set(:@board, [['X', ' ', ' '], [' ', 'X', ' '], [' ', ' ', 'X']]) 
+				symbol = board.get(horizontal, vertical)
+				expect(symbol).to eq('X')
+			end
+		end
+	end
+
 	describe '#win?' do
 		context 'player wins with top row' do
 			it 'returns true for that player' do
@@ -98,66 +121,87 @@ describe Board do
 		end
 	end
 
-	describe '#get' do
-		context 'when get is called on a position' do
-			it "returns the right symbol for the position" do
-				board.instance_variable_set(:@board, [['X', ' ', ' '], [' ', 'X', ' '], [' ', ' ', 'X']]) 
-				symbol = board.get(0, 0)
-				expect(symbol).to eq('X')
-			end
-		end
-	end
-
-	describe '#fill' do
-		context 'when fill is called on a position' do
-			it "fills the position with the right symbol" do
-				board.instance_variable_set(:@board, [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]) 
-				board.fill(1, 2, 'O')
-				symbol = board.get(1, 2)
-				expect(symbol).to eq('O')
-			end
-		end
+	describe '#display' do
+		# (Public Script Method)
+		# Only contains puts statements -> No test necessary.
 	end
 end
 
 describe Game do
 	subject(:game) { described_class.new }
+	subject(:position_game) { described_class.new }
 	let(:player_one) { double('player', name: 'Michelle', symbol: 'X') }
 	let(:player_two) { double('player', name: 'Carmen', symbol: 'O') }
 	let(:board) { instance_double(Board) }
 
-	describe '#horizontal_input' do
-		context 'when horizontal input is called' do
+	describe '#play' do
+		before do
+			allow(game).to receive(:intro)
+			allow(game).to receive(:receive_position).and_return([1, 2])
+			allow(board).to receive(:fill)
+		end
+		context 'when win? is true' do
 			before do
+				game.instance_variable_set(:@player1, player_one)
+				game.instance_variable_set(:@player2, player_two)
 				game.instance_variable_set(:@currentPlayer, player_one)
-				horizontal = '2'
-				allow(game).to receive(:gets).and_return(horizontal)
+				game.instance_variable_set(:@board, board)
+
+				allow(board).to receive(:win?).and_return(true)
+				allow(board).to receive(:draw?)
 			end
-			it 'returns the horizontal input' do
-				horizontal_input = game.horizontal_input
-				expect(horizontal_input).to eq(2)
+			it 'sends fill to board' do
+				expect(board).to receive(:fill).with(0, 1, 'X')
+				game.play
 			end
-			it 'calls verify_input once' do
-				expect(game).to receive(:verify_input).once
-				game.horizontal_input
+			it 'draw? is never called' do
+				expect(board).not_to receive(:draw?)
+				game.play
+			end
+		end
+		context 'when win? is false and then true' do	
+			before do
+				game.instance_variable_set(:@player1, player_one)
+				game.instance_variable_set(:@player2, player_two)
+				game.instance_variable_set(:@currentPlayer, player_one)
+				game.instance_variable_set(:@board, board)
+
+				allow(board).to receive(:win?).and_return(false, true)
+				allow(board).to receive(:draw?).and_return(false)
+			end
+			it 'calls draw once' do
+				expect(board).to receive(:draw?).once
+				game.play
+			end
+			it 'changes the state of currentPlayer' do
+				expect {game.play}.to change {game.instance_variable_get(:@currentPlayer)}
+			end
+		end
+		context 'when win? is false and draw? is true' do
+			before do
+				game.instance_variable_set(:@player1, player_one)
+				game.instance_variable_set(:@player2, player_two)
+				game.instance_variable_set(:@currentPlayer, player_one)
+				game.instance_variable_set(:@board, board)
+
+				allow(board).to receive(:win?).and_return(false)
+				allow(board).to receive(:draw?).and_return(true)
+			end
+			it 'calls win? and draw? once' do
+				expect(board).to receive(:draw?).once
+				expect(board).to receive(:win?).once
+				game.play
 			end
 		end
 	end
 
-	describe '#vertical_input' do
-		context 'when vertical input is called' do
-			before do
-				game.instance_variable_set(:@currentPlayer, player_one)
-				vertical = '2'
-				allow(game).to receive(:gets).and_return(vertical)
-			end
-			it 'returns the vertical input' do
-				vertical_input = game.vertical_input
-				expect(vertical_input).to eq(2)
-			end
-			it 'calls verify_input once' do
-				expect(game).to receive(:verify_input).once
-				game.vertical_input
+	describe '#intro' do
+		before do
+			allow(game).to receive(:gets).and_return('Michelle')
+		end
+		context 'when intro is called' do
+			it 'change the state of currentPlayer to player1' do
+				expect {game.intro}.to change {game.instance_variable_get(:@currentPlayer)}
 			end
 		end
 	end
@@ -192,6 +236,34 @@ describe Game do
 		end
 	end
 
+	describe '#horizontal_input' do
+		context 'when horizontal input is called' do
+			before do
+				game.instance_variable_set(:@currentPlayer, player_one)
+				horizontal = '2'
+				allow(game).to receive(:gets).and_return(horizontal)
+			end
+			it 'returns the horizontal input' do
+				horizontal_input = game.horizontal_input
+				expect(horizontal_input).to eq(2)
+			end
+		end
+	end
+
+	describe '#vertical_input' do
+		context 'when vertical input is called' do
+			before do
+				game.instance_variable_set(:@currentPlayer, player_one)
+				vertical = '2'
+				allow(game).to receive(:gets).and_return(vertical)
+			end
+			it 'returns the vertical input' do
+				vertical_input = game.vertical_input
+				expect(vertical_input).to eq(2)
+			end
+		end
+	end
+
 	describe '#position_taken?' do
 		before do
 			allow(board).to receive(:get).with(1, 2).and_return(' ')
@@ -199,8 +271,7 @@ describe Game do
 		end
 		context 'when a position is not taken' do
 			it 'returns false' do
-				horizontal = 2
-				vertical = 3
+				horizontal, vertical = 2, 3
 				game.instance_variable_set(:@board, board)
 				taken = game.position_taken?(horizontal, vertical)
 				expect(taken).to eq(false)
@@ -208,8 +279,7 @@ describe Game do
 		end
 		context 'when a position is taken' do
 			it 'returns true' do
-				horizontal = 1
-				vertical = 2
+				horizontal, vertical = 1, 2
 				game.instance_variable_set(:@board, board)
 				taken = game.position_taken?(horizontal, vertical)
 				expect(taken).to eq(true)
@@ -220,29 +290,38 @@ describe Game do
 	describe '#receive_position' do
 		before do
 			allow(board).to receive(:get).with(1, 2).and_return(' ')
-			allow(game).to receive(:horizontal_input).and_return(0, 2)
-			allow(game).to receive(:vertical_input).and_return(0, 4, 3)
+			allow(game).to receive(:horizontal_input).and_return(0, 2, 2)
+			allow(game).to receive(:vertical_input).and_return(0, 4, 3, 3)
+
+			allow(position_game).to receive(:position_taken?).and_return(true, false)
+			allow(position_game).to receive(:horizontal_input).and_return(2, 2)
+			allow(position_game).to receive(:vertical_input).and_return(3, 3)
 		end
 		context 'horizontal input is invalid once then valid' do
-			it '' do
+			it 'call horizontal_input twice' do
 				game.instance_variable_set(:@board, board)
 				expect(game).to receive(:horizontal_input).twice
 				game.receive_position
 			end
 		end
 		context 'when vertical input is invalid twice then valid' do
-			it '' do
+			it 'call vertical_input three times' do
 				game.instance_variable_set(:@board, board)
 				expect(game).to receive(:vertical_input).exactly(3).times
 				game.receive_position
 			end
 		end
-		context 'when receive_position is called and both horizontal and vertical input are valid' do
-			it 'calls position_taken? once' do
-				game.instance_variable_set(:@board, board)
-				expect(game).to receive(:position_taken?).once
-				game.receive_position
+		context 'when position_taken? returns false' do
+			it 'repeats the loop a second time' do
+				position_game.instance_variable_set(:@board, board)
+				expect(position_game).to receive(:position_taken?).twice
+				position_game.receive_position
 			end
 		end
+	end
+
+	describe '#verify_input' do
+		# (Public Script Method)
+		# Only contains puts statements + private -> No test necessary.
 	end
 end

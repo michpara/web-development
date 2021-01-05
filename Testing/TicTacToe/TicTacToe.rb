@@ -17,7 +17,6 @@ class Board
 
 	def initialize
 		@board = Array.new(3) { Array.new(3, ' ')}
-		@size = 3
 	end
 
 	def fill(horizontal, vertical, symbol)
@@ -65,6 +64,7 @@ class Game
 				puts "It's a draw!"
 				break
 			end
+
 			@currentPlayer == @player1 ? @currentPlayer = @player2 : @currentPlayer = @player1
 		end	
 	end

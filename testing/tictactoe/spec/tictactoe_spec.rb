@@ -1,4 +1,4 @@
-require_relative '../TicTacToe.rb'
+require_relative '../tictactoe.rb'
 
 describe Board do
 

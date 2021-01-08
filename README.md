@@ -15,33 +15,33 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   
   ![](gifs/google-homepage.gif)
 
-  Website : https://michpara.github.io/Google-Homepage/
+  Website : https://michpara.github.io/google-homepage/
 
-  Code : https://github.com/michpara/Google-Homepage
+  Code : https://github.com/michpara/google-homepage
 
   ### **Rock, Paper, Scissors (HTML, CSS, JavaScript)** :scissors:
 
 ![](gifs/rps.gif)
 
-  Website : https://michpara.github.io/Rock-Paper-Scissors/
+  Website : https://michpara.github.io/rock-paper-scissors/
 
-  Code : https://github.com/michpara/Rock-Paper-Scissors
+  Code : https://github.com/michpara/rock-paper-scissors
 
   ### **Etch-A-Sketch (HTML, CSS, JavaScript)** :notebook:
   
  ![](gifs/etch-a-sketch.gif)
 
-  Website : https://michpara.github.io/Etch-A-Sketch/
+  Website : https://michpara.github.io/etch-a-sketch/
 
-  Code : https://github.com/michpara/Etch-A-Sketch
+  Code : https://github.com/michpara/etch-a-sketch
 
   ### **Calculator (HTML, CSS, JavaScript)** :heavy_division_sign:
   
 ![](gifs/calculator.gif)
 
-  Website : https://michpara.github.io/Calculator/
+  Website : https://michpara.github.io/calculator/
 
-  Code : https://github.com/michpara/Calculator
+  Code : https://github.com/michpara/calculator
   
 ## **Course: Ruby Programming (Work In Progress)**
 
@@ -49,36 +49,36 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   
   ### **Ruby (Ruby)** :gem:
   
-  Code : https://github.com/michpara/Ruby
+  Code : https://github.com/michpara/ruby
 
   ### **Tic Tac Toe (Ruby)** :o: :heavy_multiplication_x:
  
-  Code : https://github.com/michpara/TicTacToe
+  Code : https://github.com/michpara/tictactoe
  
   ### **Mastermind (Ruby)** :black_circle: :white_circle:
   
-  Code: https://github.com/michpara/Mastermind
+  Code: https://github.com/michpara/mastermind
   
   ### **Event Manager (HTML, Ruby)** :book:
   Note: For this project, we were given a tutorial to follow.
   
-  Code: https://github.com/michpara/Event-Manager
+  Code: https://github.com/michpara/event-manager
   
   ### **File I/O and Serialization (Ruby)** :page_with_curl:
   
-  Code: https://github.com/michpara/File-I-O-and-Serialization
+  Code: https://github.com/michpara/file-io-and-serialization
   
   ### **Recursion (Ruby)** :gem:
   
-  Code: https://github.com/michpara/Recursion
+  Code: https://github.com/michpara/recursion
   
   ### **Data Structures (Ruby)** :gem:
   
-  Code: https://github.com/michpara/Data-Structures
+  Code: https://github.com/michpara/datastructures
   
   ### **WIP: Testing Your Ruby Code (Ruby, Rspec)** :heavy_check_mark:
   
-  Code: https://github.com/michpara/Testing-Your-Ruby-Code
+  Code: https://github.com/michpara/testing-your-ruby-code
 
 ## **Course: Ruby on Rails (Work In Progress)**
 
@@ -90,7 +90,7 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   
   Website: https://michelle-blog-app.herokuapp.com/
 
-  Code: https://github.com/michpara/Blog
+  Code: https://github.com/michpara/blog
   
 ## **Course: Databases (COMPLETED)**
 
@@ -98,4 +98,4 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
 
   ### **SQL Zoo** :leopard:
 
-  Code : https://github.com/michpara/SQL-Zoo
+  Code : https://github.com/michpara/sql-zoo

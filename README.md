@@ -96,6 +96,10 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   
   Code: https://github.com/michpara/micro-reddit
   
+  ### **Re-Former (HTML, Ruby, Ruby on Rails)**
+  
+  Code: https://github.com/michpara/re-former
+  
 ## **Course: Databases (COMPLETED)**
 
   In this course, we learned about relational databases and worked with them using SQL.

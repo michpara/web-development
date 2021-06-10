@@ -43,7 +43,17 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
 
   Code : https://github.com/michpara/calculator
   
-## **Course: Ruby Programming (Work In Progress)**
+## **Course: Databases (COMPLETED)**
+
+  In this course, we learned about relational databases and worked with them using SQL.
+
+  ### **SQL Zoo** :leopard:
+
+  Code : https://github.com/michpara/sql-zoo
+  
+## **Course: JavaScript (Work In Progress)**
+  
+## **Course: Ruby Programming (On Pause)**
 
   In this course, we covered Object Oriented Design, Testing and Data Structures in Ruby.
   
@@ -80,7 +90,7 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   
   Code: https://github.com/michpara/testing-your-ruby-code
 
-## **Course: Ruby on Rails (Work In Progress)**
+## **Course: Ruby on Rails (On Pause)**
 
   In this course, we learned how to fully craft a site's backend using the Model-View-Controller design pattern.
   
@@ -99,11 +109,3 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   ### **Re-Former (HTML, Ruby, Ruby on Rails)**
   
   Code: https://github.com/michpara/re-former
-  
-## **Course: Databases (COMPLETED)**
-
-  In this course, we learned about relational databases and worked with them using SQL.
-
-  ### **SQL Zoo** :leopard:
-
-  Code : https://github.com/michpara/sql-zoo

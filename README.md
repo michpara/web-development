@@ -52,8 +52,10 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   Code : https://github.com/michpara/sql-zoo
   
 ## **Course: JavaScript (Work In Progress)**
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
-## **Course: Ruby Programming (On Pause)**
+## **Course: Ruby Programming (On Pause) - Switching to Node.js, will come back when completed**
 
   In this course, we covered Object Oriented Design, Testing and Data Structures in Ruby.
   
@@ -90,7 +92,7 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
   
   Code: https://github.com/michpara/testing-your-ruby-code
 
-## **Course: Ruby on Rails (On Pause)**
+## **Course: Ruby on Rails (On Pause) - Switching to Node.js, will come back when completed**
 
   In this course, we learned how to fully craft a site's backend using the Model-View-Controller design pattern.
   

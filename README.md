@@ -51,7 +51,15 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
 
   Code : https://github.com/michpara/sql-zoo
   
-## **Course: JavaScript (Work In Progress)**
+## **Course: JavaScript (and React) (Work In Progress)**
+
+In this course, we learn how to make websites dynamic and interactive with JavaScript. Create features and stand-alone applications. Learn how to manipulate the DOM, use object-oriented programming principles, and build single page applications with React.
+
+  ### **Library** 📚
+  
+  Website: https://michpara.github.io/Library/
+  
+  Code: https://github.com/michpara/Library
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   

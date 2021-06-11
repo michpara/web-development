@@ -55,7 +55,7 @@ These projects are listed in **ORDER OF COMPLETION**. The further down you go, t
 
 In this course, we learn how to make websites dynamic and interactive with JavaScript. Create features and stand-alone applications. Learn how to manipulate the DOM, use object-oriented programming principles, and build single page applications with React.
 
-  ### **Library** 📚
+  ### **Library (JavaScript)** 📚
   
   Website: https://michpara.github.io/Library/
   

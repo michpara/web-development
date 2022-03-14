@@ -7,7 +7,7 @@ SQL, Node.js, Ruby and Ruby on Rails. These projects are in **order of completio
 
 These projects are listed in **ORDER OF COMPLETION**. The further down you go, the more experience I had.
 
-## Course: Foundations (IN PROGRESS) 
+## Course: Web Development 101 (COMPLETED)
   
   In this course, I learned the basic tools and technologies that every web developer should know.
 

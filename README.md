@@ -60,6 +60,14 @@ In this course, we learn how to make websites dynamic and interactive with JavaS
   Website: https://michpara.github.io/Library/
   
   Code: https://github.com/michpara/Library
+  
+  ### **Tic Tac Toe (HTML, CSS, JavaScrirpt)** 🎲
+  
+  ![](gifs/tictactoe.gif)
+    
+  Website: https://michpara.github.io/tic-tac-toe/
+  
+  Code: https://github.com/michpara/tic-tac-toe
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   

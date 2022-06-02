@@ -1,7 +1,7 @@
-# **Web Development**  <img src="https://media.giphy.com/media/d9IfL7seBexHLct75B/giphy.gif" width="100">
+# **Web Development**  
 
 This repository contains all of my projects from the Web Development curriculum **The Odin Project**. It includes projects written in HTML, CSS, JavaScript,
-SQL, Node.js, Ruby and Ruby on Rails. These projects are in **order of completion**. 
+SQL, Ruby and Ruby on Rails. These projects are in **order of completion**. 
 
 ## **Project**
 
@@ -71,7 +71,7 @@ In this course, we learn how to make websites dynamic and interactive with JavaS
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
-## **Course: Ruby Programming (On Pause) - Switching to Node.js, will come back when completed**
+## **Course: Ruby Programming (Work In Progress)**
 
   In this course, we covered Object Oriented Design, Testing and Data Structures in Ruby.
   
@@ -108,7 +108,7 @@ In this course, we learn how to make websites dynamic and interactive with JavaS
   
   Code: https://github.com/michpara/testing-your-ruby-code
 
-## **Course: Ruby on Rails (On Pause) - Switching to Node.js, will come back when completed**
+## **Course: Ruby on Rails (Work In Progress)**
 
   In this course, we learned how to fully craft a site's backend using the Model-View-Controller design pattern.
   
